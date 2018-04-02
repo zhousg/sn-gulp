@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// 适配函数
+.adapterFuc(@index) when (@index <= @len){
+  @media (min-width: extract(@deviceList,@index)) {
+    html {
+      font-size: extract(@deviceList,@index)/@psdWidth*@baseFontSize;
+    }
+  }
+  .adapterFuc(@index + 1);
+}

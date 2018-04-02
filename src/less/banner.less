@@ -1,0 +1,40 @@
+@charset "utf-8";
+.sn_banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  ul{
+    &:first-child{
+      width: 100%*10;
+      transform: translateX(-10%);
+      li{
+        float: left;
+        width: 10%;
+        a{
+          display: block;
+          width: 100%;
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+    &:last-child{
+      position: absolute;
+      right: 20rem/@baseFontSize;
+      bottom: 20rem/@baseFontSize;
+      li{
+        float: left;
+        margin-right: 15rem/@baseFontSize;
+        width: 15rem/@baseFontSize;
+        height: 15rem/@baseFontSize;
+        border-radius: 50%;
+        background: #fff;
+        &.now{
+          background: @snColor;
+        }
+      }
+    }
+  }
+}

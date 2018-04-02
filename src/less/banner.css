@@ -1,0 +1,27 @@
+@charset "utf-8";
+.sn_banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sn_banner ul:first-child {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.sn_banner ul:first-child li {
+  float: left;
+  width: 10%;
+}
+.sn_banner ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.sn_banner ul:first-child li a img {
+  width: 100%;
+  display: block;
+}
+.sn_banner ul:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
